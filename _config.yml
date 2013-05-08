@@ -1,1 +1,1 @@
-baseurl: /web
+permalink: web/:title
