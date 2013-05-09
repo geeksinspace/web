@@ -9,11 +9,30 @@ padding-top: 40px;
     padding-top: 0;
   }
 }
+
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+  /* Widen masthead and social buttons to fill body padding */
+  .jumbotron {
+    padding: 40px 20px;
+    margin-right: -20px;
+    margin-left:  -20px;
+  }
+  
+  .masthead h1 {
+     font-size: 90px;
+   }
+   .masthead p,
+   .masthead .btn {
+     font-size: 24px;
+   }
+}
+
 .navbar-fixed-top{
   margin-bottom:0;
-}
-.container{
-    width:940px;
 }
 
 .subhead {
