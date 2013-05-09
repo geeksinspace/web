@@ -1,5 +1,6 @@
 Hello
 {% for post in site.posts %}	
-    <li><a href="/web{{ post.url }}">{{ post.title }}</a></li>			
+    <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>			
 {% endfor %}
-123
+
+{{ site.baseurl }}
