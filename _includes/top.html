@@ -9,23 +9,29 @@
           <a class="brand" href="{{site.baseurl}}/">Geeks In Space</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="{{site.baseurl}}">Home</a></li>
-              <li><a href="http://geeksinspace.org.uk/wiki/doku.php">Wiki</a></li>
-              <li><a href="#contact">Team</a></li>
+              <li><a href="{{site.baseurl}}/">Home</a></li>
+              <li><a href="https://github.com/geeksinspace/web/wiki">Wiki</a></li>
+              <li><a href="{{site.baseurl}}/team">Team</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li class="nav-header">Tracking Server</li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Github Repo</a></li>
+                  <li><a href="#">Issue Tracker</a></li>
                   <li class="nav-header">Tracking Client</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li><a href="#">Github Repo</a></li>
+                  <li><a href="#">Issue Tracker</a></li>
                 </ul>
               </li>
 			<li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Launches <b class="caret"></b></a>
                 <ul class="dropdown-menu">
+                <li class="nav-header">Completed</li>
 				{% for post in site.categories.launches %}	
+				<li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>			
+				{% endfor %}
+				<li class="nav-header">Planned</li>
+				{% for post in site.categories.planned-launches %}	
 				<li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>			
 				{% endfor %}
                 </ul>
