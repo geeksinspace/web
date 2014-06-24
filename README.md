@@ -1,4 +1,4 @@
-web
+The GIS Website
 ===
 
-The geeksinspace.org.uk website content
+The GIS website source repository
